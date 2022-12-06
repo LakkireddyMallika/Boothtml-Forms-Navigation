@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      body{
+        background-color: greenyellow;
+    
+
+      }
+      h1{
+        color:red;
+        text-align:centre;
+        font-size: 25px;
+      }
+      table,tr,td{
+        text-align: center;
+    
+      }
+      button{
+        background-color: red;
+        text-align: center;
+        color: white;
+        border: white;
+        width:10%;
+        border-radius: 8px;
+    
+        }
+    center{
+        font-size:30px;
+        color:black;
+    }
+    button{
+        font-size: 30px;
+    }
+    td{
+        font-size: 20px;
+    }
+      
+    </style>
+    <title>Job Application Form</title>
+
+</head>
+<body>
+    <center><a href="{% url 'boot_cdn' %}">clickme to go to boot_cdn</a></center>
+    <center><a href="{% url 'jobapp' %}">clickme to go to jobapp</a></center>
+<center>
+        <h1>Personal Details</h1>
+        <table>
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="Password"></td>   
+            </tr>
+            <tr>
+                <td><label>Email id </label></td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td><input type="radio" name="a">Male
+                    <input type="radio" name="a">Female
+                </td>
+            </tr>
+           <tr>
+            <td><label>Contact</label>
+            <td><input type="number"></td>
+        </table>
+        <table>
+            <h1>Educational Qualification</h1>
+            
+                <tr>
+                <td><label>Degree</label>
+                    <select>
+                        <option>--Select Group--</option>
+                        <option>BE</option>
+                        <option>B.Tech</option>
+                        <option>BSC</option>
+                        <option>M.Tech</option>
+                        <option>MSC</option>
+                        <option>MBA</option>
+                    </select>
+                </td>
+                </tr>
+        </table>
+            <table>
+                <tr>
+                    <td><label>Specialisation</label>
+                    <select>
+                        <option>--Select Group--</option>
+                        <option>CSE</option>
+                        <option>EEE</option>
+                        <option>ECE</option>
+                        <option>IT</option>
+
+                    </select>
+                    </td>            
+                </tr
+            </table>
+            <table>
+                <tr>
+                    <td>
+                    <label>Hobbies</label>
+                    <input type="checkbox">Playing Chess
+                    <input type="checkbox">Reading Books
+                </td>
+                </tr>
+             
+            </table>
+            <table>
+            <h1>Address</h1>
+            <tr>
+                <td><textarea name= " "
+                  rows="5" col="20">
+                    </textarea>
+                </td>
+            </tr>
+            </table>
+            <table>
+            <tr>
+                <td>
+                <label>Attach Resume</label>
+                <input type="file">
+                </td>
+            </tr>
+            </table>
+                <button>SUBMIT</button>       
+        
+</center>   
+</body>
+</html>

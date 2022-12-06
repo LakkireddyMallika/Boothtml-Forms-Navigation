@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <link rel="stylesheet" href="./another.css">
+    <
+    <style>
+        body{
+            background-image:url(https://cdn.pixabay.com/photo/2016/11/29/01/54/wood-1866667_960_720.jpg);
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+        form{
+            width:25%;
+            margin:100px;
+        }
+        fieldset{
+            background-color: aqua;
+            border-radius: 10px;
+            margin:auto;
+            height:80%;
+            width:100%;
+        
+        }
+        legend{
+           font-size: 25px;
+           background-color:blueviolet;
+           border-radius: 10px 0 10px 0;
+           padding:10px;
+        }
+        h1{
+            text-align: center;
+            background-color:blue;
+            text-shadow: 3px 0 3px 0;
+            
+        }
+        button{
+            color:red;
+            border-radius: 10px 0 10px 0;
+            padding:10px;
+            font-family: Arial, Helvetica, sans-serif ;
+            font-size: 20px;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <center><a href="{% url 'forms' %}"}>click me to go to forms</a></center>
+    <center><a href="{% url 'boot_cdn' %"}>clickme to go to boot_cdn</a></center>
+    <h1>Job Application Form</h1>
+    <form>
+        <fieldset>
+            <legend>
+                Personal Details
+            </legend>
+            <table>
+                <tr>
+                    <td><label>FirstName</label></td>
+                    <td><input type="text"></td>
+                    <td><label>SecondName</label></td>
+                    <td><input type="text"></td>
+                    <td><label>LastName</label></td>
+                    <td><input type="text"></td>
+
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td><label>FatherName</label></td>
+                    <td><input type="text"></td>
+                    <td><label>MotherName</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label>ContactNumber</label></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><label>DateOfBirth</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label>Address</label></td>
+                    <td><textarea name=" " col="5" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td><input type="radio" name="a">Male
+                        <input type="radio" name="a">Female
+                    </td>
+                </tr>
+             </table>
+        </fieldset>
+        <fieldset>
+            <legend>Educational Details</legend>
+            <table>
+                <tr>
+                   <td><label>10TH Class  </label></td>
+                   <td><label>board</label></td>
+                   <td><input type="textarea"></td>
+                   <td><label>YearOfPassedout</label></td>
+                   <td><input type="number"></td>
+                   <td><label>Percentage</label></td>
+                   <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><label>12TH Class</label></td>
+                    <td><label>Board</label></td>
+                    <td><input type="text"></td>
+                    <td><label>YearOfPassedout</label></td>
+                    <td><input type="number"></td>
+                    <td><label>Percentage</label></td>
+                    <td><input type="number"> </td>
+
+                </tr>
+                <tr>
+                    <td><label>Graduation</label></td>
+                    <td><label>Board</label></td>
+                    <td><input type="text"></td>
+                    <td><label>YearOfPassedout</label></td>
+                    <td><input type="number"></td>
+                    <td><label>Percentage</label></td>
+                    <td><input type="number"> </td>
+                    
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Experience Details</legend>
+            <table>
+                <tr>
+                    <td><label>CompanyName</label></td>
+                    <td><input type="text"></td>
+                    <td><label>JoiningDatee</label></td>
+                    <td><input type="date"></td>
+                    <td><label>LeavingDate</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label>NoExperience</label></td>
+                    <td><input type="radio" name=" ">Yes
+                        <input type="radio" name=" ">No</td>
+                </tr>
+            </table>
+        
+        </fieldset>
+        <button>RESET</button>
+        <button>SUBMIT</button>
+    </form>
+</body>
+</html>
